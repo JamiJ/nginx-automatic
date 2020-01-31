@@ -8,8 +8,7 @@ git clone https://github.com/JamiJ/nginx-automatic
 cd nginx-automatic
 sudo bash highstate.sh
 
-echo "Configuring Keyboard & Localization - For Finnish use"
-setxkbmap fi
+echo "Configuring Localization - For Finnish use"
 sudo timedatectl set-timezone Europe/Helsinki
 git config --global credential.helper "cache --timeout=3600"
 git config --global push.default simple
