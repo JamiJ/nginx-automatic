@@ -1,6 +1,6 @@
 ufw:
   pkg.installed
-	
+
 /etc/ufw/user.rules:
  file:
   - managed
