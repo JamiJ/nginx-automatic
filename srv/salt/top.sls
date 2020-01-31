@@ -1,4 +1,4 @@
 base:
-  '*':
-    - rtmp
+ '*':
+	- rtmp
 	- ufw
