@@ -18,7 +18,7 @@ run_rtmp_module:
 
 run_unpack:
   cmd.run:
-    - name: tar -zxvf nginx-1.15.1.tar.gz
+    - name: tar -zxvf nginx-1.17.8.tar.gz
     - cwd: /home/xubuntu/nginx-automatic/
 
 run_unzip:
