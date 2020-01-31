@@ -5,8 +5,8 @@ install_packages:
       - libpcre3
       - libpcre3-dev
       - libssl-dev
-	  - zip
-	  - unzip
+      - zip
+      - unzip
 
 run_wget_nginx:
   cmd.run:
