@@ -7,6 +7,8 @@ install_packages:
       - libssl-dev
       - htop
       - ffmpeg
+      - zip
+      - unzip
 
 run_wget_nginx:
   cmd.run:
