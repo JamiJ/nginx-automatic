@@ -8,8 +8,6 @@ ufw:
   - require:
     - pkg: ufw
 
-ufw-enable:
+ufw_enable:
  cmd.run:
   - name: 'sudo ufw enable'
-  - require:
-    - pkg: ufw
