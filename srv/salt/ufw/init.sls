@@ -10,6 +10,6 @@ ufw:
 
 ufw-enable:
  cmd.run:
-  - name: 'ufw --force enable'
+  - name: 'sudo ufw --force enable'
   - require:
     - pkg: ufw
