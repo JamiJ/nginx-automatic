@@ -1,5 +1,5 @@
-ufw:
-  pkg.installed
+#ufw:
+#  pkg.installed
 
 /etc/ufw/user.rules:
  file:
@@ -15,6 +15,14 @@ ufw:
   - require:
     - pkg: ufw
 
-ufw_enable:
- cmd.run:
-  - name: 'sudo ufw --force enable'
+#ufw_enable:
+# cmd.run:
+#  - name: 'sudo ufw --force enable'
+
+ufw.running:
+ service.running:
+   - name: ufw
+   - enable: true
+   - watch:
+     - file: /etc/ufw/user.rules
+	 - file: /etc/ufw/user6.rules
